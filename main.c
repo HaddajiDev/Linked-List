@@ -2,10 +2,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-struct node{
+typedef struct node{
     int value;
     struct node *next;
-};
+}node;
 
 void insert_new_value(struct node** head_ref, int value){
     struct node* newNode = (struct node*)malloc(sizeof(struct node));
